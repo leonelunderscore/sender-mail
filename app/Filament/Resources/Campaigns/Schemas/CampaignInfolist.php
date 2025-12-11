@@ -22,7 +22,7 @@ class CampaignInfolist
                     ->placeholder('-'),
                 TextEntry::make('name'),
                 TextEntry::make('subject'),
-                TextEntry::make('html')->html()
+                TextEntry::make('html')->html()->label('Message')
                     ->columnSpanFull(),
                 IconEntry::make('is_active')
                     ->boolean(),

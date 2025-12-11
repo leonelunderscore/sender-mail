@@ -23,7 +23,7 @@ class SmtpForm
                     ->numeric(),
                 TextInput::make('username')
                     ->required(),
-                TextInput::make('password')
+                TextInput::make('password')->revealable()
                     ->password()
                     ->required(),
                 Select::make('encryption')

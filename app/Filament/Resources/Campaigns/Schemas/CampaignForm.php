@@ -42,7 +42,7 @@ class CampaignForm
                     ->required(),
                 TextInput::make('subject')
                     ->required(),
-                RichEditor::make('html')->toolbarButtons([
+                RichEditor::make('html')->label('Message')->toolbarButtons([
                     ['bold', 'italic', 'small', 'underline', 'strike', 'subscript', 'superscript', 'link', 'code'],
                     ['h1', 'h2', 'h3', 'alignStart', 'alignCenter', 'alignEnd'],
                     ['blockquote', 'codeBlock', 'bulletList', 'orderedList'],
